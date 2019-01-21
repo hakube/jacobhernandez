@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="row">
+    <div class="eight columns">
+        <h1 class="page-title"> {{ page.title }}</h1>
+        {{ content }}
+
+        <h6>COMMENTS
+         {%- include disqus_comments.html -%}
+        </h6>
+    </div>
+    <div class="four columns sidebar">
+            <a href="">Test</a>
+    </div>
+</div>

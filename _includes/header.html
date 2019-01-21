@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="{{ page.robots }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% seo %}
+    {%- include style.html-%}
+
+    {%- include google-analytics.html -%}
+
+</head>
+
+<body>
+
+    <div class="container">
+        <!--Start navigation-->
+        <div class="row">
+            <div class="twelve columns nav">
+                <ul class="navbar">
+                    <li class="navbar-item" id="nav-item"><a class="navbar-link" href="/">HOME</a></li>
+                    <li class="navbar-item" id="nav-item"><a class="navbar-link" href="/about/">ABOUT</a></li>
+                    <li class="navbar-item" id="nav-item"><a class="navbar-link" href="/blog/">BLOG</a></li>
+                    <li class="navbar-item" id="nav-item"><a class="navbar-link" href="#">CONTACT</a></li>
+                    <li class="navbar-item" id="cv-dl"><a class="navbar-link button" id="cv-dl-link">DOWNLOAD CV</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- End navigation -->
