@@ -56,6 +56,13 @@ footer {
     
 }
 
+.social-links a:hover {
+    
+    color: rgb(224, 100, 255);
+    
+    
+}
+
 .social-m {
     
     display: block;
