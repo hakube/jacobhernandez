@@ -178,7 +178,7 @@ footer {
         margin-top: 20px;
     }
 
-    .menu-button .hamb-m {
+    .menu-button .hamb-m, hamb-m i {
         font-size: 38px;
         color: #000;
         cursor: pointer;
@@ -186,8 +186,6 @@ footer {
 
     .hidden {
         display: none;
-        transform: scale(0);
-        transition: .6s ease opacity,.6s ease transform;
     }
 
     .nav {
