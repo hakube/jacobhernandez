@@ -17,7 +17,7 @@ footer {
 }
 
 .profile-image img {
-    mix-blend-mode: screen;
+    margin: 10px;
     width: 100%;
     height: auto;
 }
