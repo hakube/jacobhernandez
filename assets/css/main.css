@@ -18,9 +18,6 @@ footer {
 
 .profile-image img {
     mix-blend-mode: screen;
-    -webkit-filter: grayscale(100%) contrast(200%);
-    filter: grayscale(100%) contrast(200%);
-    opacity: 1;
 }
 .profile-info {
     margin-top: 10px;
@@ -152,7 +149,7 @@ footer {
     
 }
 
-@media (max-width: 690px) {
+@media (max-width: 694px) {
 
     .navbar-item {
         display: block;
@@ -184,10 +181,17 @@ footer {
     .menu-button .hamb-m {
         font-size: 38px;
         color: #000;
+        cursor: pointer;
     }
 
     .hidden {
         display: none;
+        transform: scale(0);
+        transition: .6s ease opacity,.6s ease transform;
+    }
+
+    .nav {
+        margin: 5px;
     }
 }
 

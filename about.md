@@ -5,7 +5,7 @@ title: About Me
 description: I'm a digital marketing assistant based in the Philippines specializes in search engine optimisation (SEO). I am also a software, web developer and a system administration. Programming applications and tweaking servers is my favorite hobby.
 robots: index, follow
 ---
-![Jacob Hernandez](/assets/img/rsz_jacob.jpg){:style="float: left;margin-right: 15px; margin-bottom: 15px; width: 280px;"}
+![Jacob Hernandez](/assets/img/rsz_jacob.webp){:style="float: left;margin-right: 15px; margin-bottom: 15px; width: 280px;"}
 Hi! My name is Jacob Hernandez. <br>
 I'm a digital marketing assistant based in the Philippines specializes in search engine optimisation (SEO). I am also a software, web developer and a system administration. Programming applications and tweaking servers is my favorite hobby.
 
