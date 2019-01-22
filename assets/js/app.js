@@ -40,4 +40,4 @@ hamburgerMenu.addEventListener('touchstart',
             hamburgerMenu.innerHTML = '<a class="hamb-m"><i class="fas fa-bars"></i></a>';
         }
     }
-);
+,false);
