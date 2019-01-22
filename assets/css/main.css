@@ -74,6 +74,10 @@ footer {
 
 }
 
+.menu-button {
+    display: none;
+}
+
 .nav .navbar {
     list-style-type: none;
 }
@@ -144,6 +148,12 @@ footer {
 
 /* Larger than mobile */
 @media (max-width: 400px) {
+
+    
+}
+
+@media (max-width: 690px) {
+
     .navbar-item {
         display: block;
         text-align: left;
@@ -158,14 +168,33 @@ footer {
         margin: 10px;
 
     }
+    .social-links {
+        text-align: center;
+    }
     #cv-dl-link {
         width: 100%;
         content: "";
     }
+    .menu-button {
+        display: initial;
+        text-align: right;
+        margin-top: 20px;
+    }
+
+    .menu-button .hamb-m {
+        font-size: 38px;
+        color: #000;
+    }
+
+    .hidden {
+        display: none;
+    }
 }
 
 /* Larger than phablet */
-@media (max-width: 550px) {}
+@media (max-width: 550px) {
+
+}
 
 /* Larger than tablet */
 @media (min-width: 750px) {}
