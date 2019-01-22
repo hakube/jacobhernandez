@@ -25,19 +25,3 @@ hamburgerMenu.addEventListener('click',
         }
     }
 );
-
-// iOS compatability
-hamburgerMenu.addEventListener('touchstart',
-    function (event) {
-        if (active === true) {
-            active = false;
-            offScreenMenu.classList.toggle('hidden');
-            hamburgerMenu.innerHTML = '<a class="hamb-m"><i class="fas fa-times"></i></a>';
-        }
-        else if (active == false) {
-            active = true;
-            offScreenMenu.classList.toggle('hidden');
-            hamburgerMenu.innerHTML = '<a class="hamb-m"><i class="fas fa-bars"></i></a>';
-        }
-    }
-,false);
