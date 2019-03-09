@@ -1,0 +1,208 @@
+html,
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+.img-fluid {
+    max-width: 100%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.profile {
+    margin-top: 50px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+}
+.profile-info {
+    margin-top: 10px;
+}
+
+.section-title {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin: 2px;
+}
+
+.section-subtitle {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.section-description {
+    font-size: 16px;
+}
+
+.social-links {
+    text-align: left;
+    
+}
+
+.social-links a {
+    font-size: 40px;
+    color: black;
+    margin-right: 8px;
+}
+
+.social-links a:hover {
+    
+    color: rgb(224, 100, 255);
+    
+    
+}
+
+.social-m {
+    
+    display: block;
+}
+
+.nav {
+    text-align: right;
+    margin-top: 40px;
+
+}
+
+.menu-button {
+    display: none;
+}
+
+.nav .navbar {
+    list-style-type: none;
+}
+
+.navbar-item {
+    display: inline;
+    margin: 20px;
+    padding: 5px;
+
+}
+
+.navbar-item:hover {
+    border-bottom: 1px solid;
+    color: #000;
+
+}
+
+.active {
+    border-bottom: 1px solid;
+}
+
+.navbar-link {
+    text-decoration: none;
+    text-transform: lowercase;
+    color: #000;
+    font-weight: 400;
+}
+
+#cv-dl:hover {
+    border-bottom: none;
+    
+}
+
+#cv-dl-link:hover {
+    color: #fff;
+    background: #000;
+}
+
+.page-title {
+    text-transform: uppercase;
+    font-size: 34px;
+}
+
+.separator {
+    width: 50%;
+    color: #000;
+}
+
+.separator-top {
+    margin-top: 40px;
+}
+
+.archv {
+    min-height: 500px;
+}
+
+.post-title a {
+    text-decoration: none;
+    color: #000;
+}
+
+.post-title a:hover {
+    text-decoration: #000 underline;
+    color: blue;
+}
+
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (max-width: 400px) {
+
+    
+}
+
+@media (max-width: 694px) {
+
+    .navbar-item {
+        display: block;
+        text-align: left;
+    }
+
+    .profile-image {
+        text-align: center;
+    }
+
+    .social-links a {
+        display: inline;
+        margin: 10px;
+
+    }
+    .social-links {
+        text-align: center;
+    }
+    #cv-dl-link {
+        width: 100%;
+        content: "";
+    }
+    .menu-button {
+        display: initial;
+        text-align: right;
+        margin-top: 20px;
+    }
+
+    .menu-button .hamb-m, hamb-m i {
+        font-size: 38px;
+        color: #000;
+        cursor: pointer;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .nav {
+        margin: 5px;
+    }
+}
+
+/* Larger than phablet */
+@media (max-width: 550px) {
+
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
