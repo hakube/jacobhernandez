@@ -6,13 +6,6 @@ description: I'm a digital marketing assistant based in the Philippines speciali
 robots: index, follow
 ---
 
-Hi! My name is Jacob Hernandez. <br>
-I'm a digital marketing assistant based in the Philippines specializes in search engine optimisation (SEO). I am also a software, web developer and a system administration. Programming applications and tweaking servers is my favorite hobby.
-
-When I am not at work, I clean the house, our toilet, play games and fire up my computer to write some code on my favorite Visual Studio code editor. I love to travel and eat a lot and sometimes, sleeping all day becomes my favorite.
-
-I also own a Lenovo ThinkPad X230 Laptop that currently runs Windows 10. I really love ThinkPad business laptops! In fact, I am using it as my daily driver.
-
 ----------
 ##### **EDUCATION**
 **Associate in Computer Technology** - 
