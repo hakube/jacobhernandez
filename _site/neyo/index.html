@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NEYO - May 27, 2019</title>
+    <style>
+        body {
+            background: #B7004E;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .ekko-lightbox-nav-overlay {
+            text-align: center;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .row {
+            margin: 15px;
+        }
+
+        a[data-toggle="lightbox"] {
+            margin-bottom: 20px;
+        }
+
+        a[data-toggle="lightbox"]>img {
+            -webkit-filter: grayscale(100%);
+            /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+        }
+
+        a[data-toggle="lightbox"]>img:hover {
+            -webkit-filter: none;
+            /* Safari 6.0 - 9.0 */
+            filter: none;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <div class="row" style="margin-top: 40px; margin-bottom: 40px;">
+            <div class="col-md-12" style="text-align: center">
+                <h1 style="text-align: center">You're a good boy Neyo! We'll miss you!!</h1>
+                <p style="text-align: center"><i>Love,<br> Mama and Papa and Tito JR</i></p>
+                <a style="text-align: center" href="/assets/img/neyo1.jpg" data-toggle="lightbox" data-gallery="gallery"
+                    class="col-md-4">
+                    <img style="filter: none !important ;-webkit-filter: none;height: 320px !important;"
+                        src="/assets/img/neyo1.jpg" class="img-fluid rounded" style="height: 320px !important">
+                </a>
+
+                <p style="text-align: center; margin-top: 10px;"><i>NEYO<br><small>May 27, 2019</small></i></p>
+            </div>
+        </div>
+        <div class="row">
+
+            <a href="/assets/img/neyo2.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="/assets/img/neyo2.jpg" class="img-fluid rounded">
+            </a>
+            <a href="/assets/img/neyo3.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="/assets/img/neyo3.jpg" class="img-fluid rounded">
+            </a>
+            <a href="/assets/img/neyo7.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="/assets/img/neyo7.jpg" class="img-fluid rounded">
+            </a>
+        </div>
+        <div class="row">
+            <a href="/assets/img/neyo4.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="/assets/img/neyo4.jpg" class="img-fluid rounded">
+            </a>
+            <a href="/assets/img/neyo5.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="/assets/img/neyo5.jpg" class="img-fluid rounded">
+            </a>
+            <a href="/assets/img/neyo6.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="/assets/img/neyo6.jpg" class="img-fluid rounded">
+            </a>
+        </div>
+        <div class="row">
+            <a href="/assets/img/neyo8.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="/assets/img/neyo8.jpg" class="img-fluid rounded">
+            </a>
+            <a href="/assets/img/neyo9.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="/assets/img/neyo9.jpg" class="img-fluid rounded">
+            </a>
+            <a href="/assets/img/neyo10.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                <img src="/assets/img/neyo10.jpg" class="img-fluid rounded">
+            </a>
+        </div>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.js"></script>
+    <script>
+        $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+
+        var HeartsBackground = {
+            heartHeight: 60,
+            heartWidth: 64,
+            hearts: [],
+            heartImage: 'http://i58.tinypic.com/ntnw5.png',
+            maxHearts: 27,
+            minScale: 0.4,
+            draw: function () {
+                this.setCanvasSize();
+                this.ctx.clearRect(0, 0, this.w, this.h);
+                for (var i = 0; i < this.hearts.length; i++) {
+                    var heart = this.hearts[i];
+                    heart.image = new Image();
+                    heart.image.style.height = heart.height;
+                    heart.image.src = this.heartImage;
+                    this.ctx.globalAlpha = heart.opacity;
+                    this.ctx.drawImage(heart.image, heart.x, heart.y, heart.width, heart.height);
+                }
+                this.move();
+            },
+            move: function () {
+                for (var b = 0; b < this.hearts.length; b++) {
+                    var heart = this.hearts[b];
+                    heart.y += heart.ys;
+                    if (heart.y > this.h) {
+                        heart.x = Math.random() * this.w;
+                        heart.y = -1 * this.heartHeight;
+                    }
+                }
+            },
+            setCanvasSize: function () {
+                this.canvas.width = window.innerWidth;
+                this.canvas.height = window.innerHeight;
+                this.w = this.canvas.width;
+                this.h = this.canvas.height;
+            },
+            initialize: function () {
+                this.canvas = $('#canvas')[0];
+
+                if (!this.canvas.getContext)
+                    return;
+
+                this.setCanvasSize();
+                this.ctx = this.canvas.getContext('2d');
+
+                for (var a = 0; a < this.maxHearts; a++) {
+                    var scale = (Math.random() * (1 - this.minScale)) + this.minScale;
+                    this.hearts.push({
+                        x: Math.random() * this.w,
+                        y: Math.random() * this.h,
+                        ys: Math.random() + 1,
+                        height: scale * this.heartHeight,
+                        width: scale * this.heartWidth,
+                        opacity: scale
+                    });
+                }
+
+                setInterval($.proxy(this.draw, this), 30);
+            }
+        };
+
+        $(document).ready(function () {
+            HeartsBackground.initialize();
+        });
+    </script>
+</body>
+
+</html>
