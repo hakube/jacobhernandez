@@ -14,19 +14,20 @@ Lipa City Colleges *A.Y 2015-2017*
 **Secondary Education** - 
 Holy Family Montessori of San Jose Batangas *A.Y 2015-2017*
 
-##### **WORK EXPERIENCE**
+##### **PROFESSIONAL WORK EXPERIENCE**
 **Global ICT Institute of Technology** - 
 Computer Instructor *2017 - 2018*
 
 **SEO Specialist** - 
 USource Global Services *2018 - present*
 
+**Data Analyst** - 
+SoFriendly LLC *2019 - present*
+
 ##### **SKILLS**
 - Software Development (Java, Python, JavaScript, .NET)
 - Web Development (HTML, CSS, JavaScript, PHP)
 - UNIX / Linux System Administration (Ubuntu, Red Hat, SUSE Enterprise)
-- Windows Server System Administration
-- SQL Server Management and Administration
 - Cloud Operations and Management (AWS, Google Cloud, Microsoft Azure, Digital Ocean)
 - Source Code Management (git, SVN)
 - Search Engine Optimisation
