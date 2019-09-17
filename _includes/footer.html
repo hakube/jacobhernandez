@@ -1,14 +1,13 @@
 <footer class="footer">
     <div class="row">
         <div class="twelve columns">
-            <p>Copyright &copy; 2018-{{ 'now' | date: "%Y" }} - Jacob Hernandez</p>
+            <p>Copyright &copy; {{ 'now' | date: "%Y" }} - Jacob Hernandez</p>
         </div>
     </div>
 
 </footer>
 </div>
-<script async>
-//actions for hamburger menu
+<script async id="hamburger-script">
 
 hamburgerMenu = document.querySelector('.hamb-m');
 offScreenMenu = document.querySelector('.hidden');
