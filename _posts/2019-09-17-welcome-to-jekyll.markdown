@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+permalink: /:title/
 date:   2019-09-17 08:09:27 +0800
 author: Jacob Hernandez
 robots: noindex, follow
