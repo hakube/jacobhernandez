@@ -137,8 +137,7 @@ footer {
 }
 
 .post-title a:hover {
-    text-decoration: #000 underline;
-    color: blue;
+    color: rgb(49, 49, 58);
 }
 
 /* Mobile first queries */
