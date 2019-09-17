@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: archive
-description: I'm a software and web developer from the Philippines working as a digital marketing asssistant for a digital agency. I specialize in web and desktop application development and Search Engine Optimization (SEO).
+description: I'm a software developer and I love video games and food. I hope to write something new every day. Welcome to my personal blog!
 robots: index,follow
 ---
 
