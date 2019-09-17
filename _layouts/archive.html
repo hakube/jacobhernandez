@@ -7,7 +7,7 @@ layout: default
         <ul style="list-style-type: none;">
             {% for post in site.posts %}
               <li>
-                <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <h2 class="post-title" style="text-transform: uppercase;"><a href="{{ post.url }}">{{ post.title }}</a></h2>
                 {{ post.excerpt }}
               </li>
             {% endfor %}
