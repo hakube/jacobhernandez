@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Page not found | Jacob Hernandez</title>
-<meta name="generator" content="Jekyll v3.8.5" />
+<meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="Page not found" />
 <meta property="og:locale" content="en_US" />
 <link rel="canonical" href="http://localhost:4000/404.html" />
@@ -18,7 +18,7 @@
 <meta property="twitter:title" content="Page not found" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/404.html","@type":"WebPage","headline":"Page not found","@context":"https://schema.org"}</script>
+{"headline":"Page not found","@type":"WebPage","url":"http://localhost:4000/404.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- Begin style-->
 <link rel="stylesheet" href="/assets/css/normalize.css">
@@ -53,9 +53,10 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
             </div>
             <div class="twelve columns nav hidden">
                 <ul class="navbar">
-                    <li class="navbar-item"><a class="navbar-link" href="/">HOME</a></li>
+
+                    <li class="navbar-item"><a class="navbar-link" href="/">home</a></li>
                     <li class="navbar-item"><a class="navbar-link" href="/about/">ABOUT</a></li>
-                    <li class="navbar-item"><a class="navbar-link" href="/blog/">BLOG</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="/contact/">CONTACT</a></li>
                 </ul>
 
             </div>
@@ -75,13 +76,33 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 </div><footer class="footer">
     <div class="row">
         <div class="twelve columns">
-            <p>Copyright &copy; 2018-2019 - Jacob Hernandez</p>
+            <p>Copyright &copy; 2019 - Jacob Hernandez</p>
         </div>
     </div>
 
 </footer>
 </div>
-<script src="/assets/js/app.js" async></script>
+<script async id="hamburger-script">
+
+hamburgerMenu = document.querySelector('.hamb-m');
+offScreenMenu = document.querySelector('.hidden');
+let active = true;
+hamburgerMenu.addEventListener('click',
+    function (event) {
+        if (active === true) {
+            active = false;
+            offScreenMenu.classList.toggle('hidden');
+            hamburgerMenu.innerHTML = '<a class="hamb-m"><i class="fas fa-times"></i></a>';
+        }
+        else if (active == false) {
+            active = true;
+            offScreenMenu.classList.toggle('hidden');
+            hamburgerMenu.innerHTML = '<a class="hamb-m"><i class="fas fa-bars"></i></a>';
+        }
+    }
+);
+
+</script>
 </body>
 
 </html>

@@ -8,11 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Jacob Hernandez</title>
-<meta name="generator" content="Jekyll v3.8.5" />
+<meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="Jacob Hernandez" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="I’m a software and web developer from the Philippines working as a digital marketing asssistant for a digital agency. I specialize in web and desktop application development and Search Engine Optimization (SEO)." />
-<meta property="og:description" content="I’m a software and web developer from the Philippines working as a digital marketing asssistant for a digital agency. I specialize in web and desktop application development and Search Engine Optimization (SEO)." />
+<meta name="description" content="I’m a software developer and I love video games and food. I hope to write something new every day. Welcome to my personal blog!" />
+<meta property="og:description" content="I’m a software developer and I love video games and food. I hope to write something new every day. Welcome to my personal blog!" />
 <link rel="canonical" href="http://localhost:4000/" />
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="Jacob Hernandez" />
@@ -20,7 +20,7 @@
 <meta property="twitter:title" content="Jacob Hernandez" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/","description":"I’m a software and web developer from the Philippines working as a digital marketing asssistant for a digital agency. I specialize in web and desktop application development and Search Engine Optimization (SEO).","name":"Jacob Hernandez","@type":"WebSite","headline":"Jacob Hernandez","@context":"https://schema.org"}</script>
+{"headline":"Jacob Hernandez","description":"I’m a software developer and I love video games and food. I hope to write something new every day. Welcome to my personal blog!","@type":"WebSite","name":"Jacob Hernandez","url":"http://localhost:4000/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- Begin style-->
 <link rel="stylesheet" href="/assets/css/normalize.css">
@@ -55,9 +55,10 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
             </div>
             <div class="twelve columns nav hidden">
                 <ul class="navbar">
-                    <li class="navbar-item"><a class="navbar-link" href="/">HOME</a></li>
+
+                    <li class="navbar-item"><a class="navbar-link" href="/">home</a></li>
                     <li class="navbar-item"><a class="navbar-link" href="/about/">ABOUT</a></li>
-                    <li class="navbar-item"><a class="navbar-link" href="/blog/">BLOG</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="/contact/">CONTACT</a></li>
                 </ul>
 
             </div>
@@ -65,49 +66,57 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
         <!-- End navigation -->
 <div class="row">
     <div class="twelve columns">
-        <!-- Content Area-->
-<div class="row profile">
-    <div class="five columns profile-image">
-        <img src="assets/img/rsz_jacob.jpg">
-    </div>
-
-    <div class="seven columns profile-info">
-        <h1 class="section-title">Jacob Hernandez</h1>
-        <h5 class="section-subtitle">Software, Web Developer and Digital Marketing Strategist</h5>
-        <p class="section-description">
-            I'm a software and web developer from the Philippines working as a digital marketing asssistant for
-            a digital agency. I specialize in web and desktop application development and Search Engine
-            Optimization (SEO).
-        </p>
-        <div class="twelve columns">
+        <div class="row">
+    <div class="twelve columns archv">
+        <h1 class="page-title"> </h1>
+        <ul style="list-style-type: none;">
             
-            <div class="twelve columns social-links">
-                <span class="social-m">Get in touch or visit my social media profiles.</span>
-                <a href="mailto:hakube@outlook.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/jacobhernandez1"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/hakube"><i class="fab fa-github"></i></a>
-                <a href="https://medium.com/@jacobh"><i class="fab fa-medium"></i></a>
-            </div>
-        </div>
-    </div>
-    <div class="twelve columns separator-top">
-        <hr class="separator">
+              <li>
+                <h2 class="post-title" style="text-transform: uppercase;"><a href="/2019/09/17/my-first-post.html">My first post</a></h2>
+                <p>Hi, my name is Jacob. I’m a software developer, programmer and a digital marketing specialist. I’m currently working in the Philippines.</p>
 
+              </li>
+            
+              <li>
+                <h2 class="post-title" style="text-transform: uppercase;"><a href="/welcome-to-jekyll/">Welcome to Jekyll!</a></h2>
+                <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+              </li>
+            
+          </ul
     </div>
 </div>
-<!-- End content area -->
-
     </div>
 </div><footer class="footer">
     <div class="row">
         <div class="twelve columns">
-            <p>Copyright &copy; 2018-2019 - Jacob Hernandez</p>
+            <p>Copyright &copy; 2019 - Jacob Hernandez</p>
         </div>
     </div>
 
 </footer>
 </div>
-<script src="/assets/js/app.js" async></script>
+<script async id="hamburger-script">
+
+hamburgerMenu = document.querySelector('.hamb-m');
+offScreenMenu = document.querySelector('.hidden');
+let active = true;
+hamburgerMenu.addEventListener('click',
+    function (event) {
+        if (active === true) {
+            active = false;
+            offScreenMenu.classList.toggle('hidden');
+            hamburgerMenu.innerHTML = '<a class="hamb-m"><i class="fas fa-times"></i></a>';
+        }
+        else if (active == false) {
+            active = true;
+            offScreenMenu.classList.toggle('hidden');
+            hamburgerMenu.innerHTML = '<a class="hamb-m"><i class="fas fa-bars"></i></a>';
+        }
+    }
+);
+
+</script>
 </body>
 
 </html>

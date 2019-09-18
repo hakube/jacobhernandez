@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Blog | Jacob Hernandez</title>
-<meta name="generator" content="Jekyll v3.8.5" />
+<meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="Blog" />
 <meta property="og:locale" content="en_US" />
 <link rel="canonical" href="http://localhost:4000/blog/" />
@@ -18,7 +18,7 @@
 <meta property="twitter:title" content="Blog" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/blog/","@type":"WebPage","headline":"Blog","@context":"https://schema.org"}</script>
+{"headline":"Blog","@type":"WebPage","url":"http://localhost:4000/blog/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- Begin style-->
 <link rel="stylesheet" href="/assets/css/normalize.css">
@@ -53,9 +53,10 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
             </div>
             <div class="twelve columns nav hidden">
                 <ul class="navbar">
-                    <li class="navbar-item"><a class="navbar-link" href="/">HOME</a></li>
+
+                    <li class="navbar-item"><a class="navbar-link" href="/">home</a></li>
                     <li class="navbar-item"><a class="navbar-link" href="/about/">ABOUT</a></li>
-                    <li class="navbar-item"><a class="navbar-link" href="/blog/">BLOG</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="/contact/">CONTACT</a></li>
                 </ul>
 
             </div>
@@ -68,6 +69,18 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
         <h1 class="page-title"> Blog</h1>
         <ul style="list-style-type: none;">
             
+              <li>
+                <h2 class="post-title" style="text-transform: uppercase;"><a href="/2019/09/17/my-first-post.html">My first post</a></h2>
+                <p>Hi, my name is Jacob. I’m a software developer, programmer and a digital marketing specialist. I’m currently working in the Philippines.</p>
+
+              </li>
+            
+              <li>
+                <h2 class="post-title" style="text-transform: uppercase;"><a href="/welcome-to-jekyll/">Welcome to Jekyll!</a></h2>
+                <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+              </li>
+            
           </ul
     </div>
 </div>
@@ -75,13 +88,33 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 </div><footer class="footer">
     <div class="row">
         <div class="twelve columns">
-            <p>Copyright &copy; 2018-2019 - Jacob Hernandez</p>
+            <p>Copyright &copy; 2019 - Jacob Hernandez</p>
         </div>
     </div>
 
 </footer>
 </div>
-<script src="/assets/js/app.js" async></script>
+<script async id="hamburger-script">
+
+hamburgerMenu = document.querySelector('.hamb-m');
+offScreenMenu = document.querySelector('.hidden');
+let active = true;
+hamburgerMenu.addEventListener('click',
+    function (event) {
+        if (active === true) {
+            active = false;
+            offScreenMenu.classList.toggle('hidden');
+            hamburgerMenu.innerHTML = '<a class="hamb-m"><i class="fas fa-times"></i></a>';
+        }
+        else if (active == false) {
+            active = true;
+            offScreenMenu.classList.toggle('hidden');
+            hamburgerMenu.innerHTML = '<a class="hamb-m"><i class="fas fa-bars"></i></a>';
+        }
+    }
+);
+
+</script>
 </body>
 
 </html>
