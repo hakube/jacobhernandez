@@ -1,16 +1,35 @@
 ---
 layout: default
 ---
-<div class="row">
-    <div class="twelve columns archv">
-        <h1 class="page-title"> {{ page.title }}</h1>
-        <ul style="list-style-type: none;">
-            {% for post in site.posts %}
-              <li>
-                <h2 class="post-title" style="text-transform: uppercase; margin: 0;"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                <hr>
-              </li>
-            {% endfor %}
-          </ul
-    </div>
+
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+  <h2 class="post-title" style="text-transform: uppercase;"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <p class="author">
+    <span class="date"><i>{{ post.date | date: '%B %d, %Y' }} </i>&nbsp; |&nbsp; <a href="/about/">{{ post.author }}</a></span>
+  </p>
+  <div class="content">
+    {{ post.content }}
+  </div>
+{% endfor %}
+
+<!-- Pagination links -->
+<div class="pagination" style="text-align: center;">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous button button-primary" style="width: 20%;">
+      Previous
+    </a>
+  {% else %}
+    
+  {% endif %}
+  
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next button button-primary" style="width: 20%;">Next</a>
+  {% else %}
+    
+  {% endif %}
+
+  <p class="page_number ">
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  </p>
 </div>
