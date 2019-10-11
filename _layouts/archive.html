@@ -6,7 +6,7 @@ layout: default
 {% for post in paginator.posts %}
   <h2 class="post-title" style="text-transform: uppercase;"><a href="{{ post.url }}">{{ post.title }}</a></h1>
   <p class="author">
-    <span class="date"><i>{{ post.date | date: '%B %d, %Y' }} </i>&nbsp; |&nbsp; <a href="/about/">{{ post.author }}</a></span>
+    <span class="date"><small>{{ post.date | date: '%B %d, %Y' }} </small>&nbsp; |&nbsp; <a href="/about/">{{ post.author }}</a></span>
   </p>
   <div class="content">
     {{ post.content }}
