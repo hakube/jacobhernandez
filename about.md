@@ -14,29 +14,17 @@ Hello! My name is Jacob Hernandez. I'm a software developer from The Philippines
 
 - Java
 - Python
-- C/C++
-- Lua
-- Javascript
-
-## What can I do?
-
- - Web automation
- - Shell scripting
- - System administration
- - Web scraping
- - Database management
- - Web application development
- - Native desktop app development
- - Mobile app development
- - Cloud infrastructure management
- - Computer hardware troubleshooting
+- C
 
 ## What do I do during my free time?
 
  - Read what's new in Y Combinator News (Hacker News)
- - Browse reddit.com
- - Play video games on my PS4 and PC
- - Read random articles
+ - Play video games
+ - Watch movies and TV shows
+
+## My projects
+
+ - Formula 1 Dataset (*extracts all Formula 1 races and data*) - [Github](https://github.com/hakube/formula1-dataset)
 
 ## Need help with you next project?
-Maybe you and can work together. Send me an email at [hakube@outlook.com](mailto:hakube@outlook.com) and let's talk about your next project.
+Maybe you and I can work together. Send me an email at [hakube@outlook.com](mailto:hakube@outlook.com) and let's talk about your next project.
