@@ -1,5 +1,5 @@
 ---
-layout: neyo
+layout: aaliyah
 robots: noindex, follow
 sitemap: false
 permalink: /aaliyah/
